@@ -1,5 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
+// import ClassComponent from './ClassComponent';
+// import FunctionComponent from './FunctionComponent';
+import Navbar from './layouts/Navbar';
+import Footer from './layouts/Footer';
+import Sidebar from './layouts/Sidebar';
 
 function App() {
   // let lang = 'JS';
@@ -10,10 +15,18 @@ function App() {
     //   <div>Div 2</div>
     // </div>
 
+    // <>
+    //   <label htmlFor="">Name</label>
+    //   <input type="text" placeholder='Enter Name' className='input-field' id='name' />
+    //   <img src={logo} alt="" />
+    //   <FunctionComponent/>
+    // 
+    // </>
+
     <>
-      <label htmlFor="">Name</label>
-      <input type="text" placeholder='Enter Name' className='input-field' id='name' />
-      {/* <img src={logo} alt="" /> */}
+      <Navbar companyName="Microsoft"/>
+      <Sidebar menu={['home', 'about']} />
+      <Footer details={{name: 'default user', mobile: 9999999999}}/>
     </>
   );
 }
