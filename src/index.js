@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // Strict mode will render components 2 times, we can also remove it
+  <React.StrictMode> 
     <App />
   </React.StrictMode>
 );
