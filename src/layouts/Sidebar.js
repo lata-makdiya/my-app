@@ -7,9 +7,10 @@ let Sidebar = (props) => {
 }
 
 export default Sidebar;
-export let firstMenu = 'Dashboard';
-let secondMenu = "Users";
 
+export let firstMenu = 'Dashboard';
+
+let secondMenu = "Users";
 export {secondMenu};
 
 Sidebar.propTypes = {
