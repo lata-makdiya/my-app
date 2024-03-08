@@ -23,6 +23,7 @@ function Practice() {
 
   // console.log(firstMenu, secondMenu);
    console.log('component rendered');
+   let conditionalRending = true;
   return (
     // <h1>Hello World!, we are programming in {lang}</h1>
     // <div>
@@ -39,6 +40,9 @@ function Practice() {
     // </>
 
     <div onClickCapture={clickCapture}>
+
+      {conditionalRending ? <h3>Conditional Component</h3> : ''}
+
       {/* <div>{message}</div> */}
       <div>{msg1}</div>
       {/* We can change name of default import, not named import */}
