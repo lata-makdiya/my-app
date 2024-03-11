@@ -1,6 +1,7 @@
 // import ClassComponent from './ClassComponent';
 // import FunctionComponent from './FunctionComponent';
 import React, { useState } from 'react';
+import ClassComponent from './lifecycle/ClassComponent';
 
 function Practice() {
   let [msg1, msg2] = useState(1);
@@ -15,15 +16,15 @@ function Practice() {
     msg2(msg1 + 1);
     // console.log(message)
     // alert('Clicked!');
-  } 
+  }
 
   let clickCapture = () => {
     // alert('This is Div.')
   }
 
   // console.log(firstMenu, secondMenu);
-   console.log('component rendered');
-   let conditionalRending = true;
+  //  console.log('component rendered');
+  //  let conditionalRending = true;
   return (
     // <h1>Hello World!, we are programming in {lang}</h1>
     // <div>
@@ -39,22 +40,23 @@ function Practice() {
     // 
     // </>
 
-    <div onClickCapture={clickCapture}>
+    // <div onClickCapture={clickCapture}>
 
-      {conditionalRending ? <h3>Conditional Component</h3> : ''}
+    //   {conditionalRending ? <h3>Conditional Component</h3> : ''}
 
-      {/* <div>{message}</div> */}
-      <div>{msg1}</div>
-      {/* We can change name of default import, not named import */}
+    //   {/* <div>{message}</div> */}
+    //   <div>{msg1}</div>
+    //   {/* We can change name of default import, not named import */}
 
-      {/* do not use onclick or clickEvent() */}
-      <button onClick={clickEvent}>Click Event</button> 
+    //   {/* do not use onclick or clickEvent() */}
+    //   <button onClick={clickEvent}>Click Event</button> 
 
-      {/* <button onClick={() => {
-        alert('Show alert on click')
-      }
-      }>Show Alert</button> */}
-    </div>
+    //   {/* <button onClick={() => {
+    //     alert('Show alert on click')
+    //   }
+    //   }>Show Alert</button> */}
+    // </div>
+    <ClassComponent />
   );
 }
 

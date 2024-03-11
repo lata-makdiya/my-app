@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 export default class UpdateComponent extends Component {
-    getSnapshotBeforeUpdate(prevProps) {
-       if(prevProps.count !== this.props.count){
-        console.log('Update Component Updated!');
-       }
-    }
+
+  componentWillUnmount() {
+    console.log('update component unmounted');
+  }
 
   render() {
     return (
-      <div>{this.props.count}</div>
+      <div>UpdateComponent: {this.props.count}</div>
     )
   }
 }
