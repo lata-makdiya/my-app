@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import SubFunctionLifeCycleComponent from "./SubFunctionLifeCycleComponent";
+import SubFunctionHookComponent from "./SubFunctionHookComponent";
 
-function FunctionLifeCycleComponent() {
+function FunctionHookComponent() {
     const [count, setCount] = useState(0);
     const [index, setIndex] = useState(0);
     const [visibility, setVisibility] = useState(true);
@@ -34,12 +34,12 @@ function FunctionLifeCycleComponent() {
     return (
         <>
             <h1>Functional LifeCycle</h1>
-            {visibility ? <SubFunctionLifeCycleComponent /> : ''}
+            {visibility ? <SubFunctionHookComponent /> : ''}
             <button onClick={countIncrease}>count {count}</button>
             <button onClick={indexIncrease}>Index {index}</button>
-            <button onClick={changeVisibility}>{ visibility ? 'Hide' : 'Show' }</button>
+            <button onClick={changeVisibility}>{visibility ? 'Hide' : 'Show'}</button>
         </>
     )
 }
 
-export default FunctionLifeCycleComponent;
+export default FunctionHookComponent;

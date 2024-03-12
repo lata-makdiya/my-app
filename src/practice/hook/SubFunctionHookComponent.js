@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-export default function SubFunctionLifeCycleComponent() {
+export default function SubFunctionHookComponent() {
 
     useEffect(() => {
         return () => console.log('Component hidden');

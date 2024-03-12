@@ -2,7 +2,7 @@
 // import FunctionComponent from './FunctionComponent';
 import React, { useState } from 'react';
 // import ClassComponent from './lifecycle/ClassComponent';
-import FunctionLifeCycleComponent from './lifecycle/FunctionLifeCycleComponent';
+import FunctionHookComponent from './hook/FunctionHookComponent';
 
 function Practice() {
   let [msg1, msg2] = useState(true);
@@ -57,7 +57,7 @@ function Practice() {
     //   }>Show Alert</button> */}
     // </div>
     // <ClassComponent />
-    <FunctionLifeCycleComponent />
+    <FunctionHookComponent />
   );
 }
 
