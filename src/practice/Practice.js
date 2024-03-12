@@ -1,7 +1,8 @@
 // import ClassComponent from './ClassComponent';
 // import FunctionComponent from './FunctionComponent';
 import React, { useState } from 'react';
-import ClassComponent from './lifecycle/ClassComponent';
+// import ClassComponent from './lifecycle/ClassComponent';
+import FunctionLifeCycleComponent from './lifecycle/FunctionLifeCycleComponent';
 
 function Practice() {
   let [msg1, msg2] = useState(1);
@@ -56,7 +57,8 @@ function Practice() {
     //   }
     //   }>Show Alert</button> */}
     // </div>
-    <ClassComponent />
+    // <ClassComponent />
+    <FunctionLifeCycleComponent />
   );
 }
 
