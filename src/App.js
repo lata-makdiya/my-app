@@ -12,7 +12,7 @@ function App() {
       {/* We can change name of default import, not named import */}
       {/* <Sidebar1 menu={['home', 'about']} /> */}
       {/* <Footer details={{ name: 'default user', mobile: 9999999999 }} /> */}
-      <Practice/>
+      <Practice/> 
     </>
   );
 }

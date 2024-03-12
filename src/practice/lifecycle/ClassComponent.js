@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import UpdateComponent from './UpdateComponent';
 
 export default class ClassComponent extends Component {

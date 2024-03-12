@@ -5,27 +5,26 @@ import React, { useState } from 'react';
 import FunctionLifeCycleComponent from './lifecycle/FunctionLifeCycleComponent';
 
 function Practice() {
-  let [msg1, msg2] = useState(1);
+  let [msg1, msg2] = useState(true);
   // let lang = 'JS';
   // console.log(useState('Before click event'));
 
   // let message = 'Before click event';
   // console.log(message)
 
-  let clickEvent = () => {
-    // message = 'After click event';
-    msg2(msg1 + 1);
-    // console.log(message)
-    // alert('Clicked!');
-  }
+  // let clickEvent = () => {
+  //   // message = 'After click event';
+  //   msg2(msg1 + 1);
+  //   // console.log(message)
+  //   // alert('Clicked!');
+  // }
 
-  let clickCapture = () => {
-    // alert('This is Div.')
-  }
+  // let clickCapture = () => {
+  //   // alert('This is Div.')
+  // }
 
   // console.log(firstMenu, secondMenu);
   //  console.log('component rendered');
-  //  let conditionalRending = true;
   return (
     // <h1>Hello World!, we are programming in {lang}</h1>
     // <div>
