@@ -4,6 +4,7 @@
 // import ClassComponent from './lifecycle/ClassComponent';
 // import FunctionHookComponent from './hook/FunctionHookComponent';
 import UseRefComponent from './hook/UseRefComponent';
+import Form from './lifecycle/Form';
 
 function Practice() {
   // let [msg1, msg2] = useState(true);
@@ -59,7 +60,8 @@ function Practice() {
     // </div>
     // <ClassComponent />
     // <FunctionHookComponent />
-    <UseRefComponent />
+    // <UseRefComponent />
+    <Form/>
   );
 }
 
