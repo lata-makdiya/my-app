@@ -1,11 +1,12 @@
 // import ClassComponent from './ClassComponent';
 // import FunctionComponent from './FunctionComponent';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 // import ClassComponent from './lifecycle/ClassComponent';
-import FunctionHookComponent from './hook/FunctionHookComponent';
+// import FunctionHookComponent from './hook/FunctionHookComponent';
+import UseRefComponent from './hook/UseRefComponent';
 
 function Practice() {
-  let [msg1, msg2] = useState(true);
+  // let [msg1, msg2] = useState(true);
   // let lang = 'JS';
   // console.log(useState('Before click event'));
 
@@ -57,7 +58,8 @@ function Practice() {
     //   }>Show Alert</button> */}
     // </div>
     // <ClassComponent />
-    <FunctionHookComponent />
+    // <FunctionHookComponent />
+    <UseRefComponent />
   );
 }
 
