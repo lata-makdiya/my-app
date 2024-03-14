@@ -7,7 +7,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // Strict mode will render components 2 times, we can also remove it
+  <React.StrictMode>
     <App />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

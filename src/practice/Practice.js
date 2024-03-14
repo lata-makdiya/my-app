@@ -3,8 +3,10 @@
 // import React, { useState } from 'react';
 // import ClassComponent from './lifecycle/ClassComponent';
 // import FunctionHookComponent from './hook/FunctionHookComponent';
-import UseRefComponent from './hook/UseRefComponent';
-import Form from './lifecycle/Form';
+// import UseRefComponent from './hook/UseRefComponent';
+// import Form from './lifecycle/Form';
+// import ListAndKeyComponent from "./ListAndKeyComponent";
+import Form from './Form';
 
 function Practice() {
   // let [msg1, msg2] = useState(true);
@@ -61,6 +63,8 @@ function Practice() {
     // <ClassComponent />
     // <FunctionHookComponent />
     // <UseRefComponent />
+    // <Form/>
+    // <ListAndKeyComponent />
     <Form/>
   );
 }
