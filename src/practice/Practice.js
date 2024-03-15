@@ -7,6 +7,7 @@
 // import Form from './lifecycle/Form';
 // import ListAndKeyComponent from "./ListAndKeyComponent";
 import Form from './Form';
+import FormWithRef from './FormWithRef';
 
 function Practice() {
   // let [msg1, msg2] = useState(true);
@@ -66,6 +67,7 @@ function Practice() {
     // <Form/>
     // <ListAndKeyComponent />
     <Form/>
+    // <FormWithRef/>
   );
 }
 
