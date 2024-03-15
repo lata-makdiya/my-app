@@ -10,12 +10,12 @@ export default function Form() {
         if (isValid) {
             console.log('submitted');
         } else {
-            alert('Please enter a valid name!');
+            alert('Please enter name');
         }
     };
 
     let inputName = (e) => {
-        if (name === '') {
+        if (e.target.value === '') {
             setIsValid(false);
         } else {
             setIsValid(true);
