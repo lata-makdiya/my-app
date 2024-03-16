@@ -6,8 +6,11 @@
 // import UseRefComponent from './hook/UseRefComponent';
 // import Form from './lifecycle/Form';
 // import ListAndKeyComponent from "./ListAndKeyComponent";
-import Form from './Form';
-import FormWithRef from './FormWithRef';
+// import Form from './Form';
+// import FormWithRef from './FormWithRef';
+import FunctionComponent from "./FunctionComponent";
+import StyleComponent from "./style/StyleComponent";
+
 
 function Practice() {
   // let [msg1, msg2] = useState(true);
@@ -62,12 +65,14 @@ function Practice() {
     //   }>Show Alert</button> */}
     // </div>
     // <ClassComponent />
+    // <FunctionComponent name="CHIRAG"/>
     // <FunctionHookComponent />
     // <UseRefComponent />
     // <Form/>
     // <ListAndKeyComponent />
-    <Form/>
+    // <Form/>
     // <FormWithRef/>
+    <StyleComponent/>
   );
 }
 

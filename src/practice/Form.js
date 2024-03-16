@@ -7,6 +7,11 @@ export default function Form() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        // if (name === '') {
+        //     alert('Please enter name');
+        // } else {
+        //     console.log('Form Submitted')
+        // }
         if (isValid) {
             console.log('submitted');
         } else {
