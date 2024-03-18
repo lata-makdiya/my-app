@@ -7,8 +7,8 @@ export default function StyleComponent() {
         <div>
             {/* background-color dont use like this, use  backgroundColor*/}
             <h1 style={{ color: "red", backgroundColor: "Black" }}>Hello World!</h1>
-            <h2 className='name'>Chirag</h2>
-            <h2 className={Style.name}>Gargi</h2>
+            <h2 className='name text-primary'>Chirag</h2>
+            <h2 className={Style.name + ' text-warning'}>Gargi</h2>
         </div>
     )
 }
