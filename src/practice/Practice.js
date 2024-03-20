@@ -9,7 +9,9 @@
 // import Form from './Form';
 // import FormWithRef from './FormWithRef';
 // import FunctionComponent from "./FunctionComponent";
-import StyleComponent from "./style/StyleComponent";
+// import StyleComponent from "./style/StyleComponent";
+import ForwardRefComponent from "./hook/Form";
+import StyleComponent from "./hook/Form";
 
 
 function Practice() {
@@ -72,7 +74,8 @@ function Practice() {
     // <ListAndKeyComponent />
     // <Form/>
     // <FormWithRef/>
-    <StyleComponent/>
+    // <StyleComponent/>
+    <ForwardRefComponent />
   );
 }
 

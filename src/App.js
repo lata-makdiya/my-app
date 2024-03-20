@@ -4,7 +4,7 @@ import Footer from './layouts/Footer';
 import Sidebar from './layouts/Sidebar';
 // import Sidebar1, { firstMenu, secondMenu } from './layouts/Sidebar';
 // import Practice from './practice/Practice';
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Dashboard from './content/Dashboard';
 import './assets/css/admin.css';
 import './assets/css/mdb.min.css';
