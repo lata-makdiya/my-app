@@ -5,14 +5,40 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Practice from './practice/hook/Form';
 import { BrowserRouter } from 'react-router-dom'
-
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Dashboard from './content/Dashboard';
+import Home from './practice/Router/Home';
+import Route1 from './practice/Router/Route1';
+import Route2 from './practice/Router/Route2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/route-1",
+    element: <Route1 />,
+  },
+  {
+    path: "/route-2",
+    element: <Route2 />,
+  },
+]);
+
+
+
 root.render(
   // Strict mode will render components 2 times, we can also remove it
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

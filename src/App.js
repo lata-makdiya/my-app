@@ -10,15 +10,17 @@ import './assets/css/admin.css';
 import './assets/css/mdb.min.css';
 
 function App() {
+  
+
   // console.log(firstMenu)
   return (
     <>
-      <header>
+      {/* <header>
         <Sidebar />
         <Navbar />
       </header>
 
-      <Dashboard />
+      <Dashboard /> */}
 
       {/* <Navbar companyName="Microsoft" /> */}
       {/* We can change name of default import, not named import */}
