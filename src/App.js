@@ -8,6 +8,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Dashboard from './content/Dashboard';
 import './assets/css/admin.css';
 import './assets/css/mdb.min.css';
+import UseContextHookComponent from './practice/hook/useContext/UseContextHookComponent';
+
 
 function App() {
   
@@ -27,6 +29,7 @@ function App() {
       {/* <Sidebar1 menu={['home', 'about']} /> */}
       {/* <Footer details={{ name: 'default user', mobile: 9999999999 }} /> */}
       {/* <Practice /> */}
+      <UseContextHookComponent/>
     </>
   );
 }

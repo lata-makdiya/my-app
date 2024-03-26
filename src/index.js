@@ -36,7 +36,8 @@ const router = createBrowserRouter([
 root.render(
   // Strict mode will render components 2 times, we can also remove it
   <React.StrictMode>
-    <RouterProvider router={router} />
+    {/* <RouterProvider router={router} /> */}
+    <App/>
   </React.StrictMode>
 
 );
