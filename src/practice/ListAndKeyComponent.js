@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 let ListAndKeyComponent = () => {
 
     let details = [
@@ -28,11 +29,11 @@ let ListAndKeyComponent = () => {
 
         <ul>
             {details.map((value, index) =>
-                <div key={index}>
+                <Fragment key={index}>
                     <li>{value.name}</li>
                     <li>{value.role}</li>
                     <br />
-                </div>
+                </Fragment>
             )}
         </ul>
     )

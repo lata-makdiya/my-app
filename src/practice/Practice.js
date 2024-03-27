@@ -5,11 +5,12 @@
 // import FunctionHookComponent from './hook/FunctionHookComponent';
 // import UseRefComponent from './hook/UseRefComponent';
 // import Form from './lifecycle/Form';
-// import ListAndKeyComponent from "./ListAndKeyComponent";
+import ListAndKeyComponent from "./ListAndKeyComponent";
 // import Form from './Form';
 // import FormWithRef from './FormWithRef';
 // import FunctionComponent from "./FunctionComponent";
 // import StyleComponent from "./style/StyleComponent";
+import Fragment from './TestFragment';
 import ForwardRefComponent from "./hook/Form";
 import StyleComponent from "./hook/Form";
 
@@ -71,11 +72,12 @@ function Practice() {
     // <FunctionHookComponent />
     // <UseRefComponent />
     // <Form/>
-    // <ListAndKeyComponent />
+    <ListAndKeyComponent />
     // <Form/>
     // <FormWithRef/>
     // <StyleComponent/>
-    <ForwardRefComponent />
+    // <ForwardRefComponent />
+    // <Fragment/>
   );
 }
 
