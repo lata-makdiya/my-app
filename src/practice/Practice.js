@@ -14,7 +14,7 @@ import Fragment from './TestFragment';
 import ForwardRefComponent from "./hook/Form";
 import StyleComponent from "./hook/Form";
 import UseMemoComponent from "./hook/useMemo/UseMemoComponent";
-
+import UseMemoComponent1 from "./hook/useMemo/UseMemo1Component";
 
 function Practice() {
   // let [msg1, msg2] = useState(true);
@@ -79,6 +79,7 @@ function Practice() {
     // <StyleComponent/>
     // <ForwardRefComponent />
     // <Fragment/>
+    // <UseMemoComponent1/>
     <UseMemoComponent/>
   );
 }
