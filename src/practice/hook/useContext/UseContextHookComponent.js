@@ -12,7 +12,7 @@ export default function UseContextHookComponent() {
   return (
     <>
       {/* <UserContext.Provider value={user}> */}
-      <UserContext.Provider value={{getData: getDataFromChild}}>
+      <UserContext.Provider value={{ userData: user, getDataFromChild: getDataFromChild }}>
         <h1>{`Hello ${user}!`}</h1>
         <ChildComponent />
       </UserContext.Provider>

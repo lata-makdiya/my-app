@@ -13,6 +13,7 @@ import ListAndKeyComponent from "./ListAndKeyComponent";
 import Fragment from './TestFragment';
 import ForwardRefComponent from "./hook/Form";
 import StyleComponent from "./hook/Form";
+import UseMemoComponent from "./hook/useMemo/UseMemoComponent";
 
 
 function Practice() {
@@ -72,12 +73,13 @@ function Practice() {
     // <FunctionHookComponent />
     // <UseRefComponent />
     // <Form/>
-    <ListAndKeyComponent />
+    // <ListAndKeyComponent />
     // <Form/>
     // <FormWithRef/>
     // <StyleComponent/>
     // <ForwardRefComponent />
     // <Fragment/>
+    <UseMemoComponent/>
   );
 }
 
