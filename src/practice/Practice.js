@@ -15,6 +15,8 @@ import ForwardRefComponent from "./hook/Form";
 import StyleComponent from "./hook/Form";
 import UseMemoComponent from "./hook/useMemo/UseMemoComponent";
 import UseMemoComponent1 from "./hook/useMemo/UseMemo1Component";
+import HttpRequestComponent from "./http_requests/HttpRequestComponent";
+import PostRequestComponent from "./http_requests/PostRequestComponent";
 
 function Practice() {
   // let [msg1, msg2] = useState(true);
@@ -80,7 +82,9 @@ function Practice() {
     // <ForwardRefComponent />
     // <Fragment/>
     // <UseMemoComponent1/>
-    <UseMemoComponent/>
+    // <UseMemoComponent/>
+    // <HttpRequestComponent/>
+    <PostRequestComponent/>
   );
 }
 
