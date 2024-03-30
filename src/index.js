@@ -9,7 +9,7 @@ import Route1 from './practice/Router/Route1';
 import Route2 from './practice/Router/Route2';
 import Dashboard from './practice/Router/Dashboard';
 import User from './practice/Router/User';
-import { BrowserRouter, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -29,8 +29,10 @@ root.render(
 
     {/* <HashRouter router={router} /> */}
     {/* <BrowserRouter> */}
+    <HashRouter>
       <App />
-      {/* <RouterProvider router={router} /> */}
+    </HashRouter>
+    {/* <RouterProvider router={router} /> */}
     {/* </BrowserRouter> */}
 
   </React.StrictMode>

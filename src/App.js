@@ -11,7 +11,7 @@ import UseContextHookComponent from './practice/hook/useContext/UseContextHookCo
 import Dashboard from './practice/Router/Dashboard';
 import User from './practice/Router/User';
 import Route1 from './practice/Router/Route1';
-import { Route, Router, Switch } from 'react-router-dom';
+import { Route, Router, Routes, Switch } from 'react-router-dom';
 
 function App() {
 
@@ -30,11 +30,11 @@ function App() {
 {/* <Footer details={{ name: 'default user', mobile: 9999999999 }} /> */}
 {/* <Practice /> */}
 {/* <UseContextHookComponent/> */}
-      <Routes>
+      {/* <Routes>
         <Route path="*" element={<Route1 />} />
         <Route path="/" element={<Dashboard />} />
         <Route path="users" element={<User />} />
-      </Routes>
+      </Routes> */}
     </>
   );
 }
