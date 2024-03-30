@@ -4,40 +4,35 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Practice from './practice/hook/Form';
-import { BrowserRouter } from 'react-router-dom'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Dashboard from './content/Dashboard';
 import Home from './practice/Router/Home';
 import Route1 from './practice/Router/Route1';
 import Route2 from './practice/Router/Route2';
+import Dashboard from './practice/Router/Dashboard';
+import User from './practice/Router/User';
+import { BrowserRouter, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/route-1",
-    element: <Route1 />,
-  },
-  {
-    path: "/route-2",
-    element: <Route2 />,
-  },
-]);
-
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      <Route index element={<Dashboard />} />
+      <Route path="users" element={<User />} />
+    </Route>
+  )
+);
 
 
 root.render(
   // Strict mode will render components 2 times, we can also remove it
   <React.StrictMode>
-    {/* <RouterProvider router={router} /> */}
-    <App/>
+
+    {/* <HashRouter router={router} /> */}
+    {/* <BrowserRouter> */}
+      <App />
+      {/* <RouterProvider router={router} /> */}
+    {/* </BrowserRouter> */}
+
   </React.StrictMode>
 
 );

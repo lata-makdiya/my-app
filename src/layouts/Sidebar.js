@@ -4,7 +4,7 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Link,
+    NavLink as Link,
 } from "react-router-dom";
 import StyleComponent from '../practice/style/StyleComponent';
 
@@ -20,20 +20,10 @@ let Sidebar = (props) => {
                         </Link>
                     </div>
                     <div>
-                        <Link to="/style">
-                            <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>Style</span>
+                        <Link to="/users">
+                            <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>Users</span>
                         </Link>
-                    </div>
-                    <Routes>
-                        <Route
-                            path="/"
-                            element={<Dashboard />}
-                        ></Route>
-                        <Route
-                            path="/style"
-                            element={<StyleComponent />}
-                        ></Route>
-                    </Routes>
+                    </div> 
                     {/* <a href="#" className="list-group-item list-group-item-action py-2 active" data-mdb-ripple-init>
                         <i className="fas fa-chart-area fa-fw me-3"></i><span>Website traffic </span>
                     </a>
