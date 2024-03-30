@@ -1,8 +1,12 @@
 Download Admin Template
 https://mdbootstrap.com/freebies/admin/
 
-- Controlled/Uncontrolled Component
-- Forward Refs 
+Browser, Router, Link, Route
+- need of react router
+- template integrate with router
+- browser router, hash router 
+- Link VS NavLink 
+
 - Form validation
 
 # Getting Started with Create React App
