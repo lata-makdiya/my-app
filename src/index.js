@@ -21,19 +21,18 @@ const router = createBrowserRouter(
     </Route>
   )
 );
-
-
+    
 root.render(
   // Strict mode will render components 2 times, we can also remove it
   <React.StrictMode>
 
     {/* <HashRouter router={router} /> */}
-    {/* <BrowserRouter> */}
-    <HashRouter>
+    <BrowserRouter>
+      {/* <HashRouter> */}
       <App />
-    </HashRouter>
-    {/* <RouterProvider router={router} /> */}
-    {/* </BrowserRouter> */}
+      {/* </HashRouter> */}
+      {/* <RouterProvider router={router} /> */}
+    </BrowserRouter>
 
   </React.StrictMode>
 

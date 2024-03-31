@@ -3,14 +3,15 @@ import Sidebar from '../../layouts/Sidebar'
 import Navbar from '../../layouts/Navbar'
 
 export default function User() {
+    console.log('user page');
     return (
         <>
-            <header>
+            {/* <header>
                 <Sidebar />
                 <Navbar />
             </header>
             <main style={{ marginTop: "58px" }}>
-                <div className="container pt-4">
+                <div className="container pt-4"> */}
                     <table className="table">
                         <thead>
                             <tr>
@@ -40,9 +41,8 @@ export default function User() {
                             </tr>
                         </tbody>
                     </table>
-                </div>
-            </main>
-
+                {/* </div>
+            </main> */}
         </>
     )
 }

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 function Navbar(props) {
     return (
+        console.log('Navbar rendered'),
         // <div>This is Navbar, Company Name is {props.companyName}</div>
         <nav id="main-navbar" className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             {/* <!-- Container wrapper --> */}

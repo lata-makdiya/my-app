@@ -9,6 +9,7 @@ import {
 import StyleComponent from '../practice/style/StyleComponent';
 
 let Sidebar = (props) => {
+    console.log('sidebar rendered');
     return (
         // <div>This is Sidebar, {props.menu[0]}</div>
         <nav id="sidebarMenu" className="collapse d-lg-block sidebar collapse bg-white">
@@ -23,7 +24,17 @@ let Sidebar = (props) => {
                         <Link to="/users">
                             <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>Users</span>
                         </Link>
-                    </div> 
+                    </div>
+                    <div>
+                        <Link to="/form-validation">
+                            <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>Form Validation</span>
+                        </Link>
+                    </div>
+                    <div>
+                        <Link to="/users/1">
+                            <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>user Details</span>
+                        </Link>
+                    </div>
                     {/* <a href="#" className="list-group-item list-group-item-action py-2 active" data-mdb-ripple-init>
                         <i className="fas fa-chart-area fa-fw me-3"></i><span>Website traffic </span>
                     </a>
