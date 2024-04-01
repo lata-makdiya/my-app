@@ -10,6 +10,7 @@ import Route2 from './practice/Router/Route2';
 import Dashboard from './practice/Router/Dashboard';
 import User from './practice/Router/User';
 import { BrowserRouter, HashRouter, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import Practice from './practice/Practice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -21,19 +22,20 @@ const router = createBrowserRouter(
     </Route>
   )
 );
-    
+
 root.render(
   // Strict mode will render components 2 times, we can also remove it
   <React.StrictMode>
 
-    {/* <HashRouter router={router} /> */}
-    <BrowserRouter>
-      {/* <HashRouter> */}
-      <App />
-      {/* </HashRouter> */}
-      {/* <RouterProvider router={router} /> */}
-    </BrowserRouter>
+    {/* <BrowserRouter> */}
+    {/* <HashRouter> */}
+    {/* <App /> */}
+    {/* </HashRouter> */}
+    {/* </BrowserRouter> */}
 
+    {/* <RouterProvider router={router} /> */}
+
+    <Practice />
   </React.StrictMode>
 
 );

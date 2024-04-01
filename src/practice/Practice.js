@@ -83,8 +83,8 @@ function Practice() {
     // <Fragment/>
     // <UseMemoComponent1/>
     // <UseMemoComponent/>
-    // <HttpRequestComponent/>
-    <PostRequestComponent/>
+    <HttpRequestComponent/>
+    // <PostRequestComponent/>
   );
 }
 

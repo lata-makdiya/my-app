@@ -25,7 +25,7 @@ function FormValidationDemo() {
     if (!password) {
       errors.password = 'Password is required';
     }
-
+    console.log(Object.keys(errors))
     if (Object.keys(errors).length > 0) {
       setErrors(errors);
     } else {
@@ -46,17 +46,13 @@ function FormValidationDemo() {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            autoComplete='on'
           />
           {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
         </div>
         <div>
           <label>Password:</label>
-          <input
-            type="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-          />
+          <input type="password" autoComplete='on' name="password" value={formData.password} onChange={handleChange} />
           {errors.password && <span style={{ color: 'red' }}>{errors.password}</span>}
         </div>
         <button type="submit">Login</button>

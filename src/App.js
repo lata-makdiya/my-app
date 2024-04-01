@@ -19,11 +19,13 @@ function App() {
   // console.log(firstMenu)
   return (
     <>
+      {/* Add layout here for render only content */}
       <header>
         <Sidebar />
         <Navbar />
       </header>
       {/* <Dashboard /> */}
+      {/* Add content here for render only content */}
       <Content />
 
       {/* <Navbar companyName="Microsoft" /> */}
