@@ -28,14 +28,14 @@ root.render(
   <React.StrictMode>
 
     {/* <BrowserRouter> */}
-    {/* <HashRouter> */}
-    {/* <App /> */}
-    {/* </HashRouter> */}
+    <HashRouter>
+      <App />
+    </HashRouter>
     {/* </BrowserRouter> */}
 
     {/* <RouterProvider router={router} /> */}
 
-    <Practice />
+    {/* <Practice /> */}
   </React.StrictMode>
 
 );
