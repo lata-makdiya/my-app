@@ -1,8 +1,11 @@
 import React, { useState, useEffect, Fragment } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 export default function HttpRequestComponent() {
     const [data, setData] = useState([]);
+    const count = useSelector((state) => state.counter.value)
+
 
     useEffect(() => {
         // fetch('https://jsonplaceholder.typicode.com/data')
@@ -20,6 +23,7 @@ export default function HttpRequestComponent() {
             {/* {data.map((photo) => (
                 <img key={photo.id} src={photo.url} alt={photo.title} width={100} />
             ))} */}
+            {/* <h1>{count}</h1> */}
             <table className='table'>
                 <thead>
                     <tr>

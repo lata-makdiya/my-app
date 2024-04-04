@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from '../../layouts/Sidebar'
 import Navbar from '../../layouts/Navbar'
 import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment, incrementByAmount } from '../Redux/CounterSlice';
+import { decrement, increment, incrementByAmount, multiplyAmount } from '../Redux/CounterSlice';
 
 export default function User() {
     const count = useSelector((state) => state.counter.value)
@@ -10,9 +10,10 @@ export default function User() {
     return (
         <>
             <h1>Redux Count {count}</h1>
-            <button onClick={() => dispatch(increment())}>+</button>
-            <button onClick={() => dispatch(decrement())}>-</button>
-            <button onClick={() => dispatch(incrementByAmount(5))}>incrementByAmount</button>
+            <button className='btn' onClick={() => dispatch(increment())}>+</button>
+            <button className='btn' onClick={() => dispatch(decrement())}>-</button>
+            <button className='btn' onClick={() => dispatch(incrementByAmount(5))}>increment By Amount</button>
+            <button className='btn' onClick={() => dispatch(multiplyAmount(2))}>increment By Amount</button>
             {/* <header>
                 <Sidebar />
                 <Navbar />
