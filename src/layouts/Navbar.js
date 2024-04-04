@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
 function Navbar(props) {
+    const count = useSelector((state) => state.counter.value)
     return (
-        console.log('Navbar rendered'),
+        // console.log('Navbar rendered'),
         // <div>This is Navbar, Company Name is {props.companyName}</div>
         <nav id="main-navbar" className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             {/* <!-- Container wrapper --> */}
@@ -16,6 +18,7 @@ function Navbar(props) {
                 {/* <!-- Brand --> */}
                 <a className="navbar-brand" href="#">
                     <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="25" alt="" loading="lazy" />
+                    <h4>{count}</h4>
                 </a>
                 {/* <!-- Search form --> */}
                 <form className="d-none d-md-flex input-group w-auto my-auto">
@@ -95,7 +98,6 @@ function Navbar(props) {
                             </li>
                         </ul>
                     </li>
-
                     {/* <!-- Avatar --> */}
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle hidden-arrow d-flex align-items-center" href="#"

@@ -9,7 +9,7 @@ import {
 import StyleComponent from '../practice/style/StyleComponent';
 
 let Sidebar = (props) => {
-    console.log('sidebar rendered');
+    // console.log('sidebar rendered');
     return (
         // <div>This is Sidebar, {props.menu[0]}</div>
         <nav id="sidebarMenu" className="collapse d-lg-block sidebar collapse bg-white">

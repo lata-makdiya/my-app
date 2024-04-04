@@ -11,6 +11,8 @@ import Dashboard from './practice/Router/Dashboard';
 import User from './practice/Router/User';
 import { BrowserRouter, HashRouter, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Practice from './practice/Practice';
+import store from './practice/Redux/store';
+import { Provider } from 'react-redux'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -27,11 +29,13 @@ root.render(
   // Strict mode will render components 2 times, we can also remove it
   <React.StrictMode>
 
-    {/* <BrowserRouter> */}
-    <HashRouter>
-      <App />
-    </HashRouter>
-    {/* </BrowserRouter> */}
+    <BrowserRouter>
+    {/* <HashRouter> */}
+      <Provider store={store}>
+        <App />
+      </Provider>
+    {/* </HashRouter> */}
+    </BrowserRouter>
 
     {/* <RouterProvider router={router} /> */}
 
