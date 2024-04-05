@@ -7,6 +7,7 @@ import UserDetails from '../practice/Router/UserDetails';
 import FormValidationDemo from '../practice/FormValidationDemo'
 import HttpRequestComponent from '../practice/http_requests/HttpRequestComponent'
 import Post from '../practice/http_requests/Post'
+import Form from '../practice/Redux/Form'
 
 export default function Content() {
     return (
@@ -20,6 +21,7 @@ export default function Content() {
                     <Route path="/post/:id" element={<Post />} />
                     <Route path="users/:id" element={<UserDetails />} />
                     <Route path="/form-validation" element={<FormValidationDemo />} />
+                    <Route path="/redux-form" element={<Form />} />
                 </Routes>
             </div>
         </main>

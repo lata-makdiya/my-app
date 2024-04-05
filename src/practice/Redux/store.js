@@ -3,9 +3,11 @@ import CounterReducer from './CounterSlice';
 import { countMiddleware } from './middleware/countMiddleware';
 import apiMiddleware from './middleware/apiMiddleware';
 import userSlice from './userSlice';
+import StringSlice from './StringSlice';
 const store = configureStore({
   reducer: {
     counter: CounterReducer,
+    string: StringSlice,
     user: userSlice
   },
   // middleware: (getDefaultMiddleware) => [
