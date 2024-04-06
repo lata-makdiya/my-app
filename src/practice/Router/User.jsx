@@ -9,14 +9,15 @@ export default function User() {
     const count = useSelector((state) => state.counter.value)
     const users = useSelector((state) => state.user.users)
     const dispatch = useDispatch()
-    // console.log(users)
+    console.log( users)
+    console.log('count - ' + count)
     return (
         <>
             <h1>Redux Count {count}</h1>
             <button className='btn' onClick={() => dispatch(increment())}>+</button>
             <button className='btn' onClick={() => dispatch(decrement())}>-</button>
             <button className='btn' onClick={() => dispatch(incrementByAmount(5))}>increment By Amount</button>
-            <button className='btn' onClick={() => dispatch(multiplyAmount(2))}>increment By Amount</button>
+            <button className='btn' onClick={() => dispatch(multiplyAmount(2))}>Multiply By Amount</button>
             <button className="btn" onClick={() => dispatch(addUser({ id: 4, name: 'Mark' }))}>Add User</button>
             {/* <header>
                 <Sidebar />

@@ -16,7 +16,6 @@ export default function Form() {
             <h1>{string}</h1>
             <input type="text" ref={name} />
             <button onClick={handleButtonClick}>Store String</button>
-
         </>
     )
 }

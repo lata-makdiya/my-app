@@ -10,14 +10,14 @@ const store = configureStore({
     string: StringSlice,
     user: userSlice
   },
-  // middleware: (getDefaultMiddleware) => [
-  //   ...getDefaultMiddleware(),
-  //   countMiddleware, 
-  //   apiMiddleware, 
-  // ],
-  middleware: (getDefaultMiddleware) => {
-    return getDefaultMiddleware().concat(countMiddleware, apiMiddleware);
-  }
+  middleware: (getDefaultMiddleware) => [
+    ...getDefaultMiddleware(),
+    countMiddleware, 
+    apiMiddleware, 
+  ],
+  // middleware: (getDefaultMiddleware) => {
+  //   return getDefaultMiddleware().concat(countMiddleware, apiMiddleware);
+  // }
 });
 
 export default store;
