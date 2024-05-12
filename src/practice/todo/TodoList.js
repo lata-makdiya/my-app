@@ -35,8 +35,9 @@ const TodoList = () => {
       <button onClick={createTodo}>Add Todo</button>
 
       <table className='table mt-5'>
+        <tbody>
         {todos.map((todo) => (
-          <tr>
+          <tr key={todo.id}>
             <td><input
               type="checkbox"
               checked={todo.completed}
@@ -46,6 +47,7 @@ const TodoList = () => {
             <td onClick={() => deleteTodo(todo.id)}>Delete</td>
           </tr>
         ))}
+        </tbody>
       </table>
 
 
