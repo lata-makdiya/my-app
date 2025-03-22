@@ -11,7 +11,8 @@ import Form from '../practice/Redux/Form'
 import TodoList from '../practice/todo/TodoList'
 import PracticeForm from '../practice/form/Form'
 import FormDataPage from '../practice/form/FormDataPage'
- 
+import UsersCRUD from '../components/UsersCRUD'
+
 export default function Content() {
     return (
         <main style={{ marginTop: "58px" }}>
@@ -28,6 +29,7 @@ export default function Content() {
                     <Route path="/todo" element={<TodoList />} />
                     <Route path="/form" element={<PracticeForm />} />
                     <Route path="/form-data-page" element={<FormDataPage />} />
+                    <Route path="/api-crud" element={<UsersCRUD />} />
                 </Routes>
             </div>
         </main>

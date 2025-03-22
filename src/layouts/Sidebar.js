@@ -55,6 +55,12 @@ let Sidebar = (props) => {
                             <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>Form</span>
                         </Link>
                     </div> 
+                    
+                    <div>
+                        <Link to="/api-crud">
+                            <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>API CRUD</span>
+                        </Link>
+                    </div> 
                     {/* <a href="#" className="list-group-item list-group-item-action py-2 active" data-mdb-ripple-init>
                         <i className="fas fa-chart-area fa-fw me-3"></i><span>Website traffic </span>
                     </a>
